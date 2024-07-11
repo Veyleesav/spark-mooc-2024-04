@@ -39,6 +39,5 @@ object BallsTest {
     val countOfPositiveExperiments: Float = countOfExperiments.count(_ ==true)
     //Делим полученное количество элементов на общее количество экспериментов, надеемся получить 3/10.
     println(countOfPositiveExperiments / count)
-
   }
 }
