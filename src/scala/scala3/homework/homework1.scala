@@ -34,7 +34,7 @@ object BallsTest {
     //Генерим список с 10 000 инстансами класса BallsExperiment
     val listOfExperiments: List[BallsExperiment] = List.fill(count)(new BallsExperiment)
     //Применяем к каждому из них функцию, которая возвращает на позицию эксперимента true в ситуации, когда первым случайно достали черный шар, а вторым - белый
-    val countOfExperiments = listOfExperiments.map(_.isFirstBlackSecondWhite())
+    val countOfExperiments = listOfExperiments.map(_.isFirstBlackSecondWhite)
     //Считаем все элементы в списке, которые удовлетворяют условию true
     val countOfPositiveExperiments: Float = countOfExperiments.count(_ ==true)
     //Делим полученное количество элементов на общее количество экспериментов, надеемся получить 3/10.
