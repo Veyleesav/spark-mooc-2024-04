@@ -19,12 +19,12 @@ class BallsExperiment {
     }
     //Убираем полученный шар из коллекции
     balls =  balls.patch(indexToPick,Nil,1)
-    return randomPickResult
+    randomPickResult
   }
 
   //Найдем вероятность  того, что в первом испытании появится черный шар, а во втором — белый.
-  def isFirstBlackSecondWhite(): Boolean = {
-    if (!(pickDaBall) && (pickDaBall)) true else false
+  def isFirstBlackSecondWhite: Boolean = {
+    if (!pickDaBall && pickDaBall) true else false
   }
 }
 
